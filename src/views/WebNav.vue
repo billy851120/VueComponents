@@ -12,17 +12,6 @@
 					>
 				</card>
 			</div>
-			<div class="col-4">
-				<card>
-					<template v-slot:title>使用者上傳影片</template>
-					<!-- <template v-slot:txt>1111111111111111111</template> -->
-					<template v-slot:link
-						><router-link to="RapidTest" class="btn btn-primary"
-							>前往元件</router-link
-						></template
-					>
-				</card>
-			</div>
 		</div>
 	</div>
 </template>

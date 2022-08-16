@@ -54,7 +54,7 @@
 							{{ item['醫事機構地址'] }}
 						</p>
 					</div>
-					<div class="me-5 d-flex flex-column">
+					<div style="width: 200px" class="me-5 d-flex flex-column">
 						<h4 class="mt-auto">
 							快篩數量 :
 							<span style="font-size: 2.3rem">{{
@@ -62,8 +62,13 @@
 							}}</span>
 						</h4>
 						<a
-							class="btn btn-primary"
-							style="color: #fff; text-decoration: none"
+							class="btn btn-primary hov_show"
+							style="
+								visibility:hidden
+								color: #fff;
+								text-decoration: none;
+								width: 150px;
+							"
 							:href="GoogleMapURL + item['醫事機構地址']"
 							target="_blank"
 							>導航</a
@@ -335,6 +340,9 @@ export default {
 .hov:hover {
 	box-shadow: 3px 1px 10px 0px #ddd;
 	cursor: pointer;
+}
+.hov:hover .hov_show {
+	visibility: visible !important;
 }
 .sel {
 	padding: 3px 21px;

@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import WebNav from '../views/WebNav.vue';
 import RapidTest from '../components/skill/RapidTest.vue';
+import uploadFile from '../components/skill/uploadFile.vue';
+import TodoList from '../components/skill/TodoList.vue';
 
 Vue.use(VueRouter);
 
@@ -17,9 +19,14 @@ const routes = [
 		component: RapidTest,
 	},
 	{
-		path: '/uploadVedio',
-		name: 'uploadVedio',
-		// conponent:uploadVedio
+		path: '/uploadFile',
+		name: 'uploadFile',
+		component: uploadFile,
+	},
+	{
+		path: '/TodoList',
+		name: 'TodoList',
+		component: TodoList,
 	},
 	{
 		path: '',
